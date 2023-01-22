@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#000;
+    background-color: #fff;
+}
+
+#top{
+    padding:10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+
+#logo {
+    flex:4;
+}
+
+#menu {
+    flex: 8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:10px;
+}
+
+#menu ul {
+    list-style: none;
+}
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding:10px;
+    margin-left:5px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color:rgba(0, 0, 0, 0.808);
+    transition: .1s ease-in-out;
+}
+
+.active {
+    border-bottom: 3px solid rgb(152,148,124);
+}
+
+#menu ul li a:hover {
+    border-bottom: 3px solid rgb(152,148,124);
+}
+.image {
+    max-width: 100%;
+    display: block;
+}
+#content-image {
+    width: 100%;
+    padding:10px;
+    position: relative;
+}
+
+.textBox {
+    position: absolute;
+    left:30px;
+    top:20%;
+}
+
+.textBox h2 , .textBox h1{
+    color:#fff;
+}
+.textBox h2{
+    font-size:1.5em;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.textBox h1 {
+    font-size:6em;
+    font-weight: 400;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.textBox .btn {
+    padding: 20px 50px;
+    background-color: rgb(155, 146, 95);
+    color:#fff;
+    text-decoration: none;
+    font-size:1.1em;
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+}
+
+.textBox .btn:hover {
+    background-color: rgb(23,23,36);
+}
+
+#content-text {
+    padding:50px 30px;
+}
+#content-text h1 {
+    font-size:3.7em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#content-text p {
+    font-size: 1.1em;
+    color:rgb(122, 122, 122);
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    flex:6;
+    position: relative;
+    padding:50px 10px;
+}
+
+.image2 {
+    position: absolute;
+    top:-10px;
+    left:25%;
+}
+
+.right{
+    flex:6;
+    padding:10px 20px;
+}
+.right > .box {
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.right > .box h2 {
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.right > .box p {
+    color:rgb(122, 122, 122);
+    font-size:1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.content-box {
+    margin-top:50px;
+    padding:30px;
+    background-color: rgb(246,246,244);
+}
+
+.content-header {
+    padding:50px 10px;
+
+}
+
+.content-header h1 {
+    font-size:4em;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.content-header p {
+    color: rgb(152,148,124);
+    font-size:1.2em;
+    font-weight: 400;
+}
+
+.c-top,.c-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.c-top .box,
+.c-bottom .box {
+    flex: 4;
+    margin:10px;
+    padding:20px;
+}
+
+.image3 {
+    width: 50px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.box p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color:rgb(155, 146, 95);
+}
+
+#content-text-2 {
+    padding:50px;
+    margin: 70px 0;
+}
+
+.content-textBox {
+    padding:120px;
+}
+
+.content-textBox:nth-child(1){
+    background-color: rgb(155, 146, 95);
+    margin:50px 0;
+}
+
+.content-textBox h1 ,
+.content-textBox p {
+    color:#fff;
+}
+
+.content-textBox h1 {
+    font-size:2.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content-textBox p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.content-textBox .btn {
+    background-color: #fff;
+    padding: 15px 40px;
+    color:#000;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.content-textBox:nth-child(2){
+    background-color: rgb(204,202,190);
+}
+
+.content-box-2 {
+    background-color: #fff;
+}
+
+.c-top .box2,
+.c-bottom .box2{
+    flex:6;
+    background-color: rgb(246,246,244);
+    padding:50px;
+    margin:20px;
+}
+
+.content-box-3 {
+    background-color: rgb(155, 146, 95);
+    color:#fff;
+}
+
+.content-box-3 .content-header p {
+    color:#fff;
+}
+
+.content-box-3 .content-bottom .c-top .box h1{
+    font-size:2em;
+}
+
+.content-box-3 .content-bottom .c-top .box h1 a{
+    text-decoration: none;
+    font-weight: 500;
+    color:#fff;
+    transition: .5s ease-in-out;
+}
+
+.content-box-3 .content-bottom .c-top .box h1 a:hover {
+    color:#000;
+}
+
+.content-box-3 .content-bottom .c-top .box p {
+    margin: 20px 0;
+}
+
+.content-box-3 .content-bottom .c-top .box p a {
+    color:#000;
+    text-decoration: none;
+    background-color: #fff;
+    padding:3px;
+    font-size: 0.8em;
+    transition: .5s;
+}
+
+.content-box-3 .content-bottom .c-top .box p a:hover {
+    background-color: #000;
+    color:#fff;
+}
+
+footer {
+    padding:30px;
+    margin-top:20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.footer-top .box {
+    flex:3;
+    padding:10px;
+}
+
+.footer-top .box ul {
+    list-style: none;
+}
+
+.footer-top ul li a {
+    text-decoration: none;
+    color:rgb(155, 146, 95);
+    font-size:1.1em;
+}
+
+.socialBox a {
+    color:#000;
+    font-size:1.2em;
+    margin-right:10px;
+}
